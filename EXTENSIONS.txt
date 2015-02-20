@@ -1,0 +1,21 @@
+
+How can this application could be extended to handle the following:
+
+##############################
+
+Domains beyond Amazon.com
+
+The Mechanize scraper allows the developer to extract the text and information by using CSS selectors or html classes. A different domain wouldnt present a problem as long as it has a strcutured HTML format.
+
+##############################
+
+Products beyond just simply books.
+
+For every product we can create a ruby object and populate that object with the information scraped from the url. We can add another page to the entities folder. 
+
+##############################
+
+Parse and ship 2,000,000 books (in a reasonably time frame; e.g., polynomial time) 
+
+instead of merely 20.d
+Still gatherine information regarding this one
