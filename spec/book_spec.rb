@@ -12,15 +12,15 @@ describe TheLibrary::Repos::BookLog do
   end
 
   it "can scrape the required information from a URL and create a hash" do 
-    new_book_object1 = (TheLibrary.book_controller.scraping_website(@book_url_book1))
-
-    expect(new_book_object1.class).to eq(Hash)
+    scraped_info = (TheLibrary.book_controller.scraping_website(@book_url_book1))
+    new_book_hash =  (TheLibrary.book_controller.building_url_hash(scraped_info))
+    expect(new_book_hash.class).to eq(Hash)
   end
 
   it "it can create a ruby book object from the infromation of the hash" do 
     # scraping the url to create the hash
-    new_book_hash = (TheLibrary.book_controller.scraping_website(@book_url_book1))
-
+    scraped_info = (TheLibrary.book_controller.scraping_website(@book_url_book1))
+    new_book_hash =  (TheLibrary.book_controller.building_url_hash(scraped_info))
     # creating the ruby object
     new_book_ruby_object = (TheLibrary.book_controller.creating_the_ruby_book_object(new_book_hash))
 
@@ -29,8 +29,11 @@ describe TheLibrary::Repos::BookLog do
 
   it "can save a book object in the postgresql database" do 
     # scraping the information from the URL's
-    new_book_hash1 = (TheLibrary.book_controller.scraping_website(@book_url_book1))
-    new_book_hash2 = (TheLibrary.book_controller.scraping_website(@book_url_book2))
+    scraped_info1 = (TheLibrary.book_controller.scraping_website(@book_url_book1))
+    scraped_info2 = (TheLibrary.book_controller.scraping_website(@book_url_book2))
+
+    new_book_hash1 = (TheLibrary.book_controller.scraping_website(scraped_info1))
+    new_book_hash2 = (TheLibrary.book_controller.scraping_website(scraped_info2))
     
     # creating the ruby objects
     new_book_ruby_object1 = (TheLibrary.book_controller.creating_the_ruby_book_object(new_book_hash1))

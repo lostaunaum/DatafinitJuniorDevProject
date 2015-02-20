@@ -12,6 +12,7 @@ module TheLibrary
         create_destroy_table
       end
 
+      # this method is for testing purposes only, production code wouldnt have this method. Before each test i clear the book_objects table. 
       def create_destroy_table
        @db.exec(%q[
          DROP TABLE IF EXISTS book_objects
