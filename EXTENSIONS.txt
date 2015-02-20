@@ -17,4 +17,4 @@ For every product we can create a ruby object and populate that object with the 
 
 Parse and ship 2,000,000 books (in a reasonably time frame; e.g., polynomial time)instead of merely 20.d
 
-Still gatherine information regarding this one
+What occurs to me is that we can develop an efficent algorithm to extract information that scrapes websites that follow a similar pattern in terms of their structure. We could increase its performance by using threads. 
