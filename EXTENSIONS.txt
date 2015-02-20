@@ -15,7 +15,6 @@ For every product we can create a ruby object and populate that object with the 
 
 ##############################
 
-Parse and ship 2,000,000 books (in a reasonably time frame; e.g., polynomial time) 
+Parse and ship 2,000,000 books (in a reasonably time frame; e.g., polynomial time)instead of merely 20.d
 
-instead of merely 20.d
 Still gatherine information regarding this one

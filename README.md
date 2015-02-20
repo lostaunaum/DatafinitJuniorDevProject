@@ -5,7 +5,7 @@
 
 ##Tools used for development
 
-This project was developed on ruby because of the flexibility and accesability of web crawling and scraper gems. The scraper gem used is Mechanize. I used a database to store the newly created ruby objects by using postgresql.
+This project was developed in ruby because of the flexibility and accessibility of web crawling and scraper gems. The scraper gem used is Mechanize. I used a database to store the newly created ruby objects by using postgresql.
 
 #####################
 
