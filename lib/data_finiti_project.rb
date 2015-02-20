@@ -3,8 +3,8 @@
 module TheLibrary
 
   # setter method for book ORM
-  def self.book_ORM=(x)
-    @book_ORM = x
+  def self.book_ORM=(orm)
+    @book_ORM = orm
   end
 
   # getter method for book ORM
@@ -13,8 +13,8 @@ module TheLibrary
   end
 
   # setter method for book ORM
-  def self.book_controller=(x)
-    @book_controller = x
+  def self.book_controller=(controller)
+    @book_controller = controller
   end
 
   # getter method for book ORM
